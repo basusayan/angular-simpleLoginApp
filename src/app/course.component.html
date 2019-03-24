@@ -1,0 +1,8 @@
+
+<h3> Course Page </h3>
+
+<ul class="list-group" *ngFor="let allCourse of courses" (click)="onSelect(allCourse)">
+  <li class="list-group-item">{{allCourse.id}}--{{allCourse.name}}</li>
+</ul>
+<router-outlet></router-outlet>
+
